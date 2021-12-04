@@ -1,83 +1,28 @@
-[
-{
-        "id":78601,
-        "name":"earring1",
-        "price":"200"
-    },
-    {
-        "id":78602,
-        "name":"earring2",
-        "price":"300"
-    },
-    {
-        "id":78603,
-        "name":"earring3",
-        "price":"400"
-    },
-    {
-        "id":78604,
-        "name":"earring4",
-        "price":"500"
-    },
-    {
-        "id":78601,
-        "name":"earring1",
-        "price":"200"
-    },
-    {
-        "id":78602,
-        "name":"earring2",
-        "price":"300"
-    },
-    {
-        "id":78603,
-        "name":"earring3",
-        "price":"400"
-    },
-    {
-        "id":78604,
-        "name":"earring4",
-        "price":"500"
-    },
-    {
-        "id":78601,
-        "name":"earring1",
-        "price":"200"
-    },
-    {
-        "id":78602,
-        "name":"earring2",
-        "price":"300"
-    },
-    {
-        "id":78603,
-        "name":"earring3",
-        "price":"400"
-    },
-    {
-        "id":78604,
-        "name":"earring4",
-        "price":"500"
-    },
-    {
-        "id":78601,
-        "name":"earring1",
-        "price":"200"
-    },
-    {
-        "id":78602,
-        "name":"earring2",
-        "price":"300"
-    },
-    {
-        "id":78603,
-        "name":"earring3",
-        "price":"400"
-    },
-    {
-        "id":78604,
-        "name":"earring4",
-        "price":"500"
-    }
+[   
+     {"id": "786006-orange"}
+    ,{"id": "786007-green"}
+    ,{"id": "786007-purple"}
+    ,{"id": "786008-red"}
+    ,{"id": "786008-sky-blue"}
+    ,{"id": "786018-purple-white"}
+    ,{"id": "786020-black-white"}
+    ,{"id": "786021-red"}
+    ,{"id": "786021-sandal"}
+    ,{"id": "786022-purple"}
+    ,{"id": "786022-sandal"}
+    ,{"id": "786039-black"}
+    ,{"id": "786039-red"}
+    ,{"id": "786039-sandal"}
+    ,{"id": "786041-black"}
+    ,{"id": "786041-red"}
+    ,{"id": "786042-grey"}
+    ,{"id": "786042-white"}
+    ,{"id": "786043-sky-blue"}
+    ,{"id": "786044-green"}
+    ,{"id": "786ABC-GREEN"}
+    ,{"id": "786ABC-PURPLE"}
+    ,{"id": "786DEF"}
+    ,{"id": "786GHI"}
+    ,{"id": "786JKL"}
+    ,{"id": "786MNO"}
 ]
-   

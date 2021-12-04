@@ -119,16 +119,17 @@ function readJSONFile(file, callback) {
             tile.classList.add("w3-margin");
             tile.classList.add("w3-animate-zoom");
             const image = document.createElement("img");
-            image.src = "/images/bracelets/"+tdata[i]["id"]+".jpg";
+            image.src = "/images/earrings/"+tdata[i]["id"]+".jpeg";
             image.alt = tdata[i]["id"];
-            image.style = "width:100%";
+            image.style = "width:200px;height:300px;";
             const price = document.createElement("h5");
             price.textContent = "₹"+tdata[i]["price"];
             price.classList.add("w3-text-grey");
             const name = document.createElement("h4");
-            name.textContent = tdata[i]["name"];
+            name.textContent = tdata[i]["id"]; //["name"]
+            name.style="text-transform:uppercase"
             tile.appendChild(image);
-            tile.appendChild(price);
+           // tile.appendChild(price);
             tile.appendChild(name);
             photogrid.appendChild(tile);
             console.log(tdata["id"]);
