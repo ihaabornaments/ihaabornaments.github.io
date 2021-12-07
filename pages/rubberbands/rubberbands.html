@@ -17,7 +17,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   class="w3-bar-item w3-button">Close Menu</a>
   <a href="/pages/bracelets/bracelets.html" class="w3-bar-item w3-button">Bracelets</a>
   <a href="/pages/brooches/brooches.html" class="w3-bar-item w3-button">Brooches</a>
-  <a href="/pages/chains/chains.html" class="w3-bar-item w3-button">Chains</a>
+  <a href="/pages/necklace/necklace.html" class="w3-bar-item w3-button">Necklace</a>
   <a href="/pages/earrings/earrings.html" class="w3-bar-item w3-button">Earrings</a>
   <a href="/pages/hairclips/hairclips.html" class="w3-bar-item w3-button">HairClips</a>
   <a href="/pages/hairpins/hairpins.html" class="w3-bar-item w3-button">HairPins</a>
@@ -84,66 +84,68 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </div>
 
 <script>
-    const pagination = document.getElementById("pagination");
-    const photogrid = document.getElementById("photogrid");
+  const pagination = document.getElementById("pagination");
+  const photogrid = document.getElementById("photogrid");
 // Script to open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+document.getElementById("mySidebar").style.display = "block";
 }
- 
+
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+document.getElementById("mySidebar").style.display = "none";
 }
 
 
 function readJSONFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/json");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function() {
+      if (rawFile.readyState === 4 && rawFile.status == "200") {
+          callback(rawFile.responseText);
+      }
+  }
+  rawFile.send(null);
 }
 
 //tiles
-    readJSONFile("/pages/rubberbands/rubberbands.json",
-     function(ttext){
-        tdata = JSON.parse(ttext);
-        for(var i=0;i<tdata.length;i++){
+  readJSONFile("/pages/rubberbands/rubberbands.json",
+   function(ttext){
+      tdata = JSON.parse(ttext);
+      for(var i=0;i<tdata.length;i++){
 
-            const tile = document.createElement("div");
-            tile.classList.add("w3-quarter");
-            tile.classList.add("w3-card-4");
-            tile.classList.add("w3-padding-16");
-            tile.classList.add("w3-margin");
-            tile.classList.add("w3-animate-zoom");
-            const image = document.createElement("img");
-            image.src = "/images/bracelets/"+tdata[i]["id"]+".jpg";
-            image.alt = tdata[i]["id"];
-            image.style = "width:100%";
-            const price = document.createElement("h5");
-            price.textContent = "₹"+tdata[i]["price"];
-            price.classList.add("w3-text-grey");
-            const name = document.createElement("h4");
-            name.textContent = tdata[i]["name"];
-            tile.appendChild(image);
-            tile.appendChild(price);
-            tile.appendChild(name);
-            photogrid.appendChild(tile);
-            console.log(tdata["id"]);
-        
-    }
+          const tile = document.createElement("div");
+          tile.classList.add("w3-quarter");
+          tile.classList.add("w3-card-4");
+          tile.classList.add("w3-padding-16");
+          tile.classList.add("w3-margin");
+          tile.classList.add("w3-animate-zoom");
+          const image = document.createElement("img");
+          image.src = "/images/rubberbands/"+tdata[i]["id"]+".jpeg";
+          image.alt = tdata[i]["id"];
+          image.style = "width:200px;height:300px;";
+          // const price = document.createElement("h5");
+          // price.textContent = "₹"+tdata[i]["price"];
+          // price.classList.add("w3-text-grey");
+          const name = document.createElement("h4");
+          name.textContent = tdata[i]["id"]; //["name"]
+          name.style="text-transform:uppercase"
+          tile.appendChild(image);
+         // tile.appendChild(price);
+          tile.appendChild(name);
+          photogrid.appendChild(tile);
+          console.log(tdata["id"]);
+      
+  }
 }
 
 
-    );
+  );
 
 
-    
-    
+  
+  
 </script>
+
 </body>
 </html>

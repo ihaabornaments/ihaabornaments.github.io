@@ -15,14 +15,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Close Menu</a>
-  <!-- <a href="/pages/bracelets/bracelets.html" class="w3-bar-item w3-button">Bracelets</a> -->
-  <!-- <a href="/pages/brooches/brooches.html" class="w3-bar-item w3-button">Brooches</a> -->
+  <a href="/pages/bracelets/bracelets.html" class="w3-bar-item w3-button">Bracelets</a>
+  <a href="/pages/brooches/brooches.html" class="w3-bar-item w3-button">Brooches</a>
   <a href="/pages/necklace/necklace.html" class="w3-bar-item w3-button">Necklace</a>
   <a href="/pages/earrings/earrings.html" class="w3-bar-item w3-button">Earrings</a>
   <a href="/pages/hairclips/hairclips.html" class="w3-bar-item w3-button">HairClips</a>
-  <!-- <a href="/pages/hairpins/hairpins.html" class="w3-bar-item w3-button">HairPins</a> -->
-  <!-- <a href="/pages/keychains/keychains.html" class="w3-bar-item w3-button">Keychains</a> -->
-  <!-- <a href="/pages/rubberbands/rubberbands.html" class="w3-bar-item w3-button">Rubberbands</a> -->
+  <a href="/pages/hairpins/hairpins.html" class="w3-bar-item w3-button">HairPins</a>
+  <a href="/pages/keychains/keychains.html" class="w3-bar-item w3-button">Keychains</a>
+  <a href="/pages/rubberbands/rubberbands.html" class="w3-bar-item w3-button">Rubberbands</a>
   
 </nav>
 
@@ -125,9 +125,9 @@ function readJSONFile(file, callback) {
           image.src = "/images/necklace/"+tdata[i]["id"]+".jpeg";
           image.alt = tdata[i]["id"];
           image.style = "width:200px;height:300px;";
-          const price = document.createElement("h5");
-          price.textContent = "₹"+tdata[i]["price"];
-          price.classList.add("w3-text-grey");
+          // const price = document.createElement("h5");
+          // price.textContent = "₹"+tdata[i]["price"];
+          // price.classList.add("w3-text-grey");
           const name = document.createElement("h4");
           name.textContent = tdata[i]["id"]; //["name"]
           name.style="text-transform:uppercase"
